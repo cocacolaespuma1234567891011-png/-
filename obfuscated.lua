@@ -1,4 +1,5 @@
-print(identifyexecutor())
+print(identifyexecutor().. "v1")
+--Services
 getgenv().runService = game:GetService"RunService"
 getgenv().textService = game:GetService"TextService"
 getgenv().inputService = game:GetService"UserInputService"
@@ -2131,7 +2132,7 @@ function library:AddTab(title, pos)
 
 				self.content = library:Create("Frame", {
 					Size = UDim2.new(1, 0, 1, 0),
-					BackgroundColor3 = Color3.fromRGB(30, 30, 30),
+					BackgroundColor3 = Color3.fromRGB(0, 0, 0),
 					BorderColor3 = Color3.fromRGB(60, 60, 60),
 					BorderMode = Enum.BorderMode.Inset,
 					Parent = self.main
