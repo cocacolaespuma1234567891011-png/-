@@ -1,4 +1,12 @@
-print(identifyexecutor().. "v1")
+print(printidentity(identifyexecutor()))
+
+local function wsg()
+    print("wsg")
+end
+
+wsg()
+
+
 --Services
 getgenv().runService = game:GetService"RunService"
 getgenv().textService = game:GetService"TextService"
@@ -200,7 +208,7 @@ library.createDivider = function(option, parent)
 		AnchorPoint = Vector2.new(0.5, 0.5),
 		Position = UDim2.new(0.5, 0, 0.5, 0),
 		Size = UDim2.new(1, -24, 0, 1),
-		BackgroundColor3 = Color3.fromRGB(60, 60, 60),
+		BackgroundColor3 = Color3.fromRGB(0, 0, 0),
 		BorderColor3 = Color3.new(),
 		Parent = option.main
 	})
@@ -2125,14 +2133,14 @@ function library:AddTab(title, pos)
 				self.hasInit = true
 
 				self.main = library:Create("Frame", {
-					BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+					BackgroundColor3 = Color3.fromRGB(30, 30, 30),
 					BorderColor3 = Color3.new(),
 					Parent = column.main
 				})
 
 				self.content = library:Create("Frame", {
 					Size = UDim2.new(1, 0, 1, 0),
-					BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+					BackgroundColor3 = Color3.fromRGB(30, 30, 30),
 					BorderColor3 = Color3.fromRGB(60, 60, 60),
 					BorderMode = Enum.BorderMode.Inset,
 					Parent = self.main
