@@ -1182,7 +1182,7 @@ library.createBox = function(option, parent)
 	option.holder = library:Create("Frame", {
 		Position = UDim2.new(0, 6, 0, option.text == "nil" and 4 or 20),
 		Size = UDim2.new(1, -12, 0, 20),
-		BackgroundColor3 = Color3.fromRGB(50, 50, 50),
+		BackgroundColor3 = Color3.fromRGB(0, 0, 0),
 		BorderColor3 = Color3.new(),
 		Parent = option.main
 	})
