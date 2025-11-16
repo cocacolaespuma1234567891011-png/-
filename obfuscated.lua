@@ -1,4 +1,4 @@
---Services
+print(identifyexecutor())
 getgenv().runService = game:GetService"RunService"
 getgenv().textService = game:GetService"TextService"
 getgenv().inputService = game:GetService"UserInputService"
@@ -7,7 +7,7 @@ if getgenv().library then
 	getgenv().library:Unload()
 end
 
-local library = {design = getgenv().design == "kali" and "kali", tabs = {}, draggable = true, flags = {}, title = "DupeSide Hub", open = false, mousestate = inputService.MouseIconEnabled,popup = nil, instances = {}, connections = {}, options = {}, notifications = {}, tabSize = 0, theme = {}, foldername = "awakenkn-hubv3", fileext = ".json"}
+local library = {design = getgenv().design == "kali" and "kali", tabs = {}, draggable = true, flags = {}, title = "awakenkn-hub", open = false, mousestate = inputService.MouseIconEnabled,popup = nil, instances = {}, connections = {}, options = {}, notifications = {}, tabSize = 0, theme = {}, foldername = "awakenkn-hubv3", fileext = ".json"}
 if getgenv().scripttitle then
     library.title = getgenv().scripttitle
 end
@@ -1182,7 +1182,7 @@ library.createBox = function(option, parent)
 	option.holder = library:Create("Frame", {
 		Position = UDim2.new(0, 6, 0, option.text == "nil" and 4 or 20),
 		Size = UDim2.new(1, -12, 0, 20),
-		BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+		BackgroundColor3 = Color3.fromRGB(50, 50, 50),
 		BorderColor3 = Color3.new(),
 		Parent = option.main
 	})
@@ -2124,7 +2124,7 @@ function library:AddTab(title, pos)
 				self.hasInit = true
 
 				self.main = library:Create("Frame", {
-					BackgroundColor3 = Color3.fromRGB(30, 30, 30),
+					BackgroundColor3 = Color3.fromRGB(0, 0, 0),
 					BorderColor3 = Color3.new(),
 					Parent = column.main
 				})
