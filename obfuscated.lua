@@ -1,12 +1,3 @@
-print(printidentity(identifyexecutor()))
-
-local function wsg()
-    print("wsg")
-end
-
-wsg()
-
-
 --Services
 getgenv().runService = game:GetService"RunService"
 getgenv().textService = game:GetService"TextService"
@@ -208,7 +199,7 @@ library.createDivider = function(option, parent)
 		AnchorPoint = Vector2.new(0.5, 0.5),
 		Position = UDim2.new(0.5, 0, 0.5, 0),
 		Size = UDim2.new(1, -24, 0, 1),
-		BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+		BackgroundColor3 = Color3.fromRGB(60, 60, 60),
 		BorderColor3 = Color3.new(),
 		Parent = option.main
 	})
@@ -472,7 +463,7 @@ library.createButton = function(option, parent)
 		Size = UDim2.new(1, 0, 1, 0),
 		BackgroundTransparency = 1,
 		Image = "rbxassetid://2592362371",
-		ImageColor3 = Color3.fromRGB(60, 60, 60),
+		ImageColor3 = Color3.fromRGB(0, 0, 0),
 		ScaleType = Enum.ScaleType.Slice,
 		SliceCenter = Rect.new(2, 2, 62, 62),
 		Parent = option.title
@@ -2501,7 +2492,7 @@ function library:Init()
 		AutoButtonColor = false,
 		Position = UDim2.new(0, 100, 0, 46),
 		Size = UDim2.new(0, 500, 0, 600),
-		BackgroundColor3 = Color3.fromRGB(20, 20, 20),
+		BackgroundColor3 = Color3.fromRGB(0, 0, 0),
 		BorderColor3 = Color3.new(),
 		ScaleType = Enum.ScaleType.Tile,
 		Modal = true,
