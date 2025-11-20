@@ -31,10 +31,10 @@ local Library = {
 	HudRegistry = {};
 
 	FontColor = Color3.fromRGB(255, 255, 255);
-	MainColor = Color3.fromRGB(28, 28, 28);
-	BackgroundColor = Color3.fromRGB(20, 20, 20);
+	MainColor = Color3.fromRGB(35, 35, 48);
+	BackgroundColor = Color3.fromRGB(29, 27, 38);
 	AccentColor = Color3.fromRGB(66, 109, 135);
-	OutlineColor = Color3.fromRGB(50, 50, 50);
+	OutlineColor = Color3.fromRGB(39, 35, 47);
 	RiskColor = Color3.fromRGB(255, 50, 50),
 
 	Black = Color3.new(0, 0, 0);
@@ -3869,4 +3869,5 @@ Players.PlayerAdded:Connect(OnPlayerChange);
 Players.PlayerRemoving:Connect(OnPlayerChange);
 getgenv().Library = Library;
 return Library
+
 
